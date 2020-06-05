@@ -21,6 +21,6 @@ docker run \
 	radamsa-haproxy
 ```
 
-A directory must be mounted into `/samples` containing one or more files to use as input to the fuzzer.  In the example `pwd` is used to insert the current working directory, since Docker requires absolute paths for mounts.
+A directory must be mounted into `/samples` containing one or more files to use as input to the fuzzer.  In the example, `pwd` is used to insert the current working directory, since Docker requires absolute paths for mounts.
 
 By default 4 Radamsa servers are started. The number can be changed by passing `NUM_SERVERS` into the container.
