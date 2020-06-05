@@ -15,10 +15,10 @@ docker build -t radamsa-haproxy .
 # Run on port 8888 with the directory "my-samples" containing input files
 docker run \
     --rm \
-	--init \
-	-v `pwd`/my-samples:/samples \
-	-p 8888:8888 \
-	radamsa-haproxy
+    --init \
+    -v `pwd`/my-samples:/samples \
+    -p 8888:8888 \
+    radamsa-haproxy
 ```
 
 A directory must be mounted into `/samples` containing one or more files to use as input to the fuzzer.  In the example, `pwd` is used to insert the current working directory, since Docker requires absolute paths for mounts.
