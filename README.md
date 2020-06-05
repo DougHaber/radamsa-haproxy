@@ -12,11 +12,11 @@ This was a quick solution for a very specific problem I encountered on a fuzzing
 # Build a Docker image:
 docker build -t radamsa-haproxy .
 
-# Run on port 8888 with a local payload file
+# Run on port 8888 with the directory "my-samples" containing input files
 docker run \
     --rm \
 	--init \
-	-v `pwd`/samples:/samples \
+	-v `pwd`/my-samples:/samples \
 	-p 8888:8888 \
 	radamsa-haproxy
 ```
