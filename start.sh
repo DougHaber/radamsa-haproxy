@@ -4,7 +4,7 @@ NUM_SERVERS=${NUM_SERVERS:-4}
 PORT=${PORT:-8888}
 
 if [ ! "$(ls -A /samples)" ]; then
-    echo "ERROR: An samples directory must be volume mounted on /samples"
+    echo "ERROR: A samples directory must be volume mounted on /samples"
     exit 1
 fi
 
